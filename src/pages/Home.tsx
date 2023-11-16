@@ -1,12 +1,14 @@
 import React from 'react'
 import image from '../public/main_image.jpeg'
+import map from '../public/map.png'
 function Home() {
   return (
     <>
+    <div >
     <div className='flex flex-row font-medium mt-12 ml-8 text-3xl'>
       <h1>Alberta Park </h1>
     </div>
-    <img className='p-8' src= {image} alt="" />
+    <img className='p-8 flex flex-row' src= {image} alt="" />
     <div className='flex flex-row font-medium ml-8 text-xl'>
         Open Hours
     </div>
@@ -37,6 +39,10 @@ function Home() {
     <ul className='list-disc flex flex-row ml-20 text-sm'>
         <li>Paved Paths</li>
     </ul>
+        <div className='flex flex-row ml-8 mb-6 mt-4' >
+            <img className='flex h-3/4 w-3/4' src={map} alt="" />
+        </div>
+    </div>
     </>
   )
 }
